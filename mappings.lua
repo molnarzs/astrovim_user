@@ -30,7 +30,11 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    -- quick save
+    ["<M-k>"] = { function() require("smart-splits").resize_up() end, desc = "Resize split up" },
+    ["<M-j>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
+    ["<M-h>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
+    ["<M-l>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
+    -- quick sav#000000e
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
