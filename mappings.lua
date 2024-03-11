@@ -38,7 +38,10 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
   t = {
-    -- setting a mapping to false will disable it
+    -- setting a "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true }mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  i = {
+    ["<C-J>"] = { "copilot#Accept(<Tab>)", silent = true, expr = true, script = true }
+  }
 }

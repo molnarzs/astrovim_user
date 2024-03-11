@@ -20,7 +20,7 @@ return {
     -- gruvbox
     gruvbox_baby_transparent_mode = 1,
     gruvbox_baby_telescope_theme = 1,
-
+    copilot_no_tab_map = true,
   },
 }
 -- If you need more control, you can use the function()...end notation
